@@ -146,23 +146,32 @@ export default function CreatePost() {
     console.log(formState.inputs.title.value, formState.inputs.slug.value, idCompatible, formState.inputs.translator.value, imdb,
       miladi, 'miladi', status, description, poster, 'poster', imgdata,'url', idCategories, idGenres, formState.inputs.actors.value
     );
- 
 
+    // {
+    //   title: formState.inputs.title.value,
+    //       slug: formState.inputs.slug.value,
+    //     compatible: idCompatible,
+    //     translators: formState.inputs.translator.value,
+    //     imdb: imdb,
+    //     published_at: miladi,
+    //     status: status,
+    //     summary: description,
+    //     poster: imgdata,
+    //     categories: idCategories,
+    //     genres: idGenres,
+    //     actors: formState.inputs.actors.value,
+    // }
+    const data = new FormData()
+    data.append('poster', poster)
+    data.append('title', formState.inputs.title.value)
+    data.append('imdb', imdb)
+    data.append('status', status)
 
     axios
-      .post("/posts", {
-        title: formState.inputs.title.value,
-        slug: formState.inputs.slug.value,
-        compatible: idCompatible,
-        translators: formState.inputs.translator.value,
-        imdb: imdb,
-        published_at: miladi,
-        status: status,
-        summary: description,
-        poster: imgdata,
-        categories: idCategories,
-        genres: idGenres,
-        actors: formState.inputs.actors.value,
+      .post("/posts", data, {
+        headers: {
+          'Content-Type': 'multipart/form-data'
+        }
       })
       .then((response) => {
         console.log(response);
