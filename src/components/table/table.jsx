@@ -3,10 +3,13 @@ import React from "react";
 export default function Table({ data, titles, caption }) {
 
     return (
-        <table class="w-full table-auto bg-gray-50 border border-gray-300 border-separate">
-            <caption class="caption-top mb-2 mt-1">
-                {caption}
-            </caption>
+        <table className="w-full table-auto bg-gray-50 border border-gray-300 border-separate">
+            {
+                caption && <caption className="caption-top mb-2 mt-1">
+                    {caption}
+                </caption>
+            }
+
             <thead>
                 <tr>
                     {

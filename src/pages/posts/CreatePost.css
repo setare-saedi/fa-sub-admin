@@ -1,0 +1,49 @@
+
+.bg-new-post{
+    background-color: var(--dark);
+    padding: 20px;
+    border-radius: 10px;
+
+}
+.nav-tabs .nav-link {
+    color: var(--light);
+}
+.nav-tabs.nav-link :hover {
+    color: var(--light);
+    border: none;
+}
+.input-group input{
+    border-radius:0 15px 15px 0 ;
+}
+.input-group button{
+    border-radius: 15px 0 0 15px;
+}
+
+.btn-submit-post{
+margin-top: 25px ;
+}
+
+
+.post-form__title-input, .post-form__slug-input, .post-form__translator-input{
+    width: 100%;
+    margin: 15px 0;
+    padding: 10px 15px;
+    border-radius: 7px;
+    }
+   
+
+
+
+    .image-item {
+        display: flex;
+        margin: 10px 0;
+      }
+      .image-item__btn-wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+      }
+      button {
+        height: 40px;
+      }
+      

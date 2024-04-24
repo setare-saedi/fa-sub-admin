@@ -39,13 +39,7 @@ export default function Dashboard() {
     ]
 
     return (
-        <div className=" grid grid-cols-12 gap-4">
-            {/* sidebar */}
-            <div className=" col-span-2 ">
-                <Sidebar />
-            </div>
-            {/* content */}
-            <div className=" col-span-10  mt-3">
+        <>
                 {/* row1 */}
                 <div className=" grid grid-cols-9 gap-3 mb-4 ml-4">
                     <div className=" col-span-3 border border-gray-300 bg-gray-50">
@@ -104,9 +98,6 @@ export default function Dashboard() {
                     </div>
 
                 </div>
-
-            </div>
-
-        </div >
+        </>
     )
 }

@@ -1,3 +1,4 @@
+import React from "react";
 import { useContext, createContext} from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
@@ -7,7 +8,7 @@ const AuthContext = createContext();
 const AuthProvider = ({ children }) => {
 
     
-    const [user, setUser] = useState(null);
+    const [user, setUser] = useState('');
     const [token, setToken] = useState(localStorage.getItem("fa-sub-admin") || "");
     const navigate = useNavigate();
 
@@ -34,15 +35,13 @@ const AuthProvider = ({ children }) => {
     //     }
     //   };
 
-    const loginAction = (data) => {
-        setUser(data.password);
+    const loginAction =  (data) => {
+         setUser(data.password);
         setToken(data.username);
         localStorage.setItem("fa-sub-admin", data.username);
         navigate("/dashboard");
-         
     }
    
-
 
     const logOut = () => {
         setUser(null);

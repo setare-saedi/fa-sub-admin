@@ -1,0 +1,29 @@
+/* 
+.btn-operator{
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 20px;
+    align-items: center;
+}
+.btn1{
+    padding: 15px 25px;
+    border-radius: 8px;
+   border: none;
+    margin-left: 15px;
+    text-decoration: none;
+}
+.btn-new{
+    background-color: var(--primary-800);
+    color: var(--light);
+    box-shadow: 0 8px 10px -8px var(--primary-800);
+}
+.btn-deleted{
+    background-color: var(--danger);
+    color: var(--light);
+    box-shadow: 0 8px 10px -8px var(--danger);
+}
+.btn-search{
+    background-color: var(--info);
+    color: var(--light);
+    box-shadow: 0 8px 10px -8px var(--info);
+} */

@@ -1,0 +1,28 @@
+
+.posts-operator{
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 20px;
+    align-items: center;
+}
+.post-btn{
+    padding: 15px 25px;
+    border-radius: 8px;
+   border: none;
+    margin-left: 15px;
+}
+.post-btn-new{
+    background-color: var(--primary-800);
+    color: var(--light);
+    box-shadow: 0 8px 10px -8px var(--primary-800);
+}
+.post-btn-deleted{
+    background-color: var(--danger);
+    color: var(--light);
+    box-shadow: 0 8px 10px -8px var(--danger);
+}
+.post-btn-search{
+    background-color: var(--info);
+    color: var(--light);
+    box-shadow: 0 8px 10px -8px var(--info);
+}
